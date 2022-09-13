@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>GS Matrix</title>
+</head>
+<body>
+    <main>
+        <div id="logo"></div>
+        <form action="https://formsubmit.co/gsmatrix2022@outlook.com" autocomplete="on" method="post">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html"> <!--pagina após a finalização do form-->
+
+            <input type="hidden" name="_autoresponse" value="Agradecemos o envio do formulário, em breve retornaremos com a simulação!"> <!--Mensagem automatica para o cliente-->
+
+            <input type="hidden" name="_captcha" value="false"> <!--desabilitar o captcha-->
+
+            <!-- <input type="hidden" name="_cc" id="" value="oliveirayago15@hotmail.com">  PARA COLOCAR EMAIL EM COPIA-->
+
+            <label for="inome">Nome completo</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome"> 
+
+            <label for="icpf">CPF</label>
+            <input type="text" id="icpf" name="cpf" \
+			pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" \
+			title="Digite um CPF no formato: xxx.xxx.xxx-xx"> 
+
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" placeholder="Email">
+
+            <label for="inasc">Data de nascimento</label>
+            <input type="date" name="dataNascimento" id="inasc">
+
+            <label for="irg">N°RG</label>
+            <input type="text" name="rg" id="irg">
+
+            <label for="iuf">UF do RG</label>
+            <select name="listauf" id="iuf">
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select><br>
+
+            <label for="icep">CEP</label>
+            <input type="text" name="cep" id="icep" required pattern="\d{5}-\d{3}" maxlength="8" >
+
+            <label for="iende">Endereço</label>
+            <input type="text" name="endereço" id="iende" placeholder="Endereço com número">
+
+            <label for="itel">Celular com DDD</label>
+            <input type="tel" name="telefone" id="itel" placeholder="(xx)xxxx-xxxx" maxlength="11">
+
+            <label for="ipix">PIX (informar a instituição com o pix)</label>
+            <input type="text" name="pix" id="ipix" placeholder="Ex: Itáu 123456789 ">
+
+            <label for="iprof">Profissão</label>
+            <input type="text" name="profissão" id="iprof">
+
+            <label for="inmae">Nome da mãe</label>
+            <input type="text" name="Nome da mãe" id="inmae">
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
