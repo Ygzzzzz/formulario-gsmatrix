@@ -21,25 +21,28 @@
 
             <!-- <input type="hidden" name="_cc" id="" value="oliveirayago15@hotmail.com">  PARA COLOCAR EMAIL EM COPIA-->
 
+            <h1>Formulário <br> <img  id="icred" src="https://gvn.virtaus.com.br/WICred/resources/images/iCred_verde.png" alt=""></h1>
+            
+
             <label for="inome">Nome completo</label>
-            <input type="text" name="nome" id="inome" placeholder="Nome"> 
+            <input type="text" name="nome" id="inome" placeholder="Nome" required> 
 
             <label for="icpf">CPF</label>
             <input type="text" id="icpf" name="cpf" \
 			pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" \
-			title="Digite um CPF no formato: xxx.xxx.xxx-xx"> 
+			title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="CPF" required> 
 
             <label for="iemail">Email</label>
-            <input type="email" name="email" id="iemail" placeholder="Email">
+            <input type="email" name="email" id="iemail" placeholder="Email" required>
 
             <label for="inasc">Data de nascimento</label>
-            <input type="date" name="dataNascimento" id="inasc">
+            <input type="date" name="dataNascimento" id="inasc" required>
 
             <label for="irg">N°RG</label>
-            <input type="text" name="rg" id="irg">
+            <input type="text" name="rg" id="irg" placeholder="Número do RG" required>
 
-            <label for="iuf">UF do RG</label>
-            <select name="listauf" id="iuf">
+            <label for="iuf">UF do RG</label><br>
+            <select name="listauf" id="iuf" required>
                 <option>AC</option>
                 <option>AL</option>
                 <option>AP</option>
@@ -70,24 +73,24 @@
             </select><br>
 
             <label for="icep">CEP</label>
-            <input type="text" name="cep" id="icep" required pattern="\d{5}-\d{3}" maxlength="8" >
+            <input type="text" name="cep" id="icep" placeholder="00000-000" required pattern="\d{5}-\d{3}" maxlength="8" >
 
             <label for="iende">Endereço</label>
-            <input type="text" name="endereço" id="iende" placeholder="Endereço com número">
+            <input type="text" name="endereço" id="iende" placeholder="Endereço com número" required>
 
             <label for="itel">Celular com DDD</label>
-            <input type="tel" name="telefone" id="itel" placeholder="(xx)xxxx-xxxx" maxlength="11">
+            <input type="tel" name="telefone" id="itel" placeholder="(xx)xxxx-xxxx" maxlength="11" required>
 
             <label for="ipix">PIX (informar a instituição com o pix)</label>
-            <input type="text" name="pix" id="ipix" placeholder="Ex: Itáu 123456789 ">
+            <input type="text" name="pix" id="ipix" placeholder="Ex: Itáu 123456789 " required>
 
             <label for="iprof">Profissão</label>
-            <input type="text" name="profissão" id="iprof">
+            <input type="text" name="profissão" id="iprof" placeholder="Profissão" required>
 
             <label for="inmae">Nome da mãe</label>
-            <input type="text" name="Nome da mãe" id="inmae">
+            <input type="text" name="Nome da mãe" id="inmae" placeholder="Nome da Mãe completo" required>
 
-            <input type="submit" value="Enviar">
+            <input id="submit" type="submit" value="Enviar">
         </form>
     </main>
 </body>
