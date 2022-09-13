@@ -87,6 +87,8 @@ input:focus {
 }
 
 #submit {
+    display: flex;
+    justify-content: center;
     padding: 10px 100px ;
     outline: none;
     margin: auto;
