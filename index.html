@@ -28,9 +28,8 @@
             <input type="text" name="Nome" id="inome" placeholder="Nome" autocomplete="name" required> 
 
             <label for="icpf">CPF</label>
-            <input type="text" id="icpf" name="Cpf" \
-			pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" \
-			title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="CPF" required> 
+            <input type="text" id="icpf" name="Cpf" pattern="[0-9]{11}"
+			title="Digite apenas Números" placeholder="CPF (Apenas números)" maxlength="11" required> 
 
             <label for="iemail">Email</label>
             <input type="email" name="Email" id="iemail" placeholder="Email" maxlength="50" autocomplete="email" required>
