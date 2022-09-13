@@ -60,11 +60,12 @@ form > label {
 
 input {
     margin-top: 5px;
-    margin-left: 35px;
+    margin-left: 20px;
     margin-bottom: 5px;
-    padding: 5px 70px 5px 0px;
+    padding: 5px 0px;
     outline: none;
     border-radius: 5px;
+    width: 250px;
 }
 
 input:focus {
@@ -73,15 +74,16 @@ input:focus {
 
 #iuf {
     padding: 5px 0px 5px 0px;
-    margin-left: 35px;
+    margin-left: 20px;
     border: 2px solid black;
     font-size: 15px;
     border-radius: 10px;
-    
+    width: 50px ;
 }
 
 #inasc {
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px;
+    width: 120px;
 }
 
 #submit {
