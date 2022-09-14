@@ -104,3 +104,30 @@ input:focus {
     background-color: rgba(255, 255, 0, 0.589);
     color: black;
 }
+
+#carregou {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#imgcarregou {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 10px rgba(0, 0, 0, 0.18) solid;
+    border-left-color: #EE1D23;
+    border-radius: 50%;
+
+    animation: loading 1.2s linear infinite;
+
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%) none;
+}
+
+@keyframes loading {
+    to {transform: rotate(360deg);}
+}
