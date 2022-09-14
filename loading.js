@@ -1,5 +1,9 @@
 function loading () {
     let carregou = document.getElementById('carregou')
 
-    carregou.style.display = 'block'
+    if(carregou.style.display == 'none'){
+        carregou.style.display = 'block'
+    } else {
+        carregou.style.display = 'none'
+    }
 }
