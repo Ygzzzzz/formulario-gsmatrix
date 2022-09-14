@@ -29,7 +29,7 @@ main {
     background-color: white;
     width: 300px;
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 10px;
@@ -47,6 +47,7 @@ h1 {
     width: 200px;
     height: 180px;
     margin-left: 45px;
+    margin-top: 20px;
 }
 
 img#icred {
@@ -106,7 +107,7 @@ input:focus {
 }
 
 #carregou {
-    position: absolute;
+    position: fixed;
     display: none;
     height: 100%;
     width: 100%;
@@ -123,9 +124,9 @@ input:focus {
 
     animation: loading 1.2s linear infinite;
 
-    top: 50%;
-    left: 39%;
-    transform: translate(-50%, -50%) none;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    /* margin-left: -50px; */
 }
 
 @keyframes loading {
