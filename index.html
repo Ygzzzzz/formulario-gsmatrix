@@ -15,13 +15,13 @@
     </div>
     <main>
         <div id="logo"></div>
-        <form action="https://formsubmit.co/gsmatrix2022@outlook.com" autocomplete="on" method="post" onsubmit="validadata(), loading()">
+        <form action="https://formsubmit.co/gsmatrix2022@outlook.com" autocomplete="on" method="post" id="form">
 
             <input type="hidden" name="_next" value="https://ygzzzzz.github.io/formulario-gsmatrix/sucesso.html"> <!--pagina após a finalização do form -->
 
             <input type="hidden" name="_autoresponse" value="Agradecemos o envio do formulário, em breve retornaremos com a simulação!"> <!--Mensagem automatica para o cliente-->
 
-            <!-- <input type="hidden" name="_captcha" value="false"> desabilitar o captcha -->
+            <input type="hidden" name="_captcha" value="false"> <!--desabilitar o captcha -->
 
             <!-- <input type="hidden" name="_cc" id="" value="emailteste@hotmail.com">  PARA COLOCAR EMAIL EM COPIA-->
 
@@ -38,7 +38,7 @@
             <input type="email" name="Email" id="iemail" placeholder="Email" maxlength="50" autocomplete="email" required>
 
             <label for="inasc">Data de nascimento</label>
-            <input type="date" name="Data Nascimento" id="inasc"  required>
+            <input type="date" name="Data Nascimento" id="inasc" required>
 
             <label for="irg">N°RG</label>
             <input type="text" name="Rg" id="irg" placeholder="Número do RG" required>
