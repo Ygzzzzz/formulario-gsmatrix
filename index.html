@@ -32,8 +32,7 @@
             <input type="text" name="Nome" id="inome" placeholder="Nome" autocomplete="name" required> 
 
             <label for="icpf">CPF</label>
-            <input type="text" id="icpf" name="Cpf" pattern="[0-9]{11}"
-			title="Digite apenas Números" placeholder="CPF (Apenas números)" maxlength="11" required> 
+            <input type="text" id="icpf" name="Cpf" placeholder="CPF (Apenas números)" maxlength="14" onkeyup="mascaraCpf()" required> 
 
             <label for="iemail">Email</label>
             <input type="email" name="Email" id="iemail" placeholder="Email" maxlength="50" autocomplete="email" required>
@@ -82,7 +81,7 @@
             <input type="text" name="Endereço" id="iende" placeholder="Endereço com número" required>
 
             <label for="itel">Celular com DDD</label>
-            <input type="tel" name="Telefone" id="itel" placeholder="(xx)xxxx-xxxx" maxlength="11" required>
+            <input type="tel" name="Telefone" id="itel" placeholder="(xx)xxxx-xxxx" onkeydown="return mascaraTelefone(event)" required>
 
             <label for="ipix">PIX (informar a instituição com o pix)</label>
             <input type="text" name="Pix" id="ipix" placeholder="Ex: Itáu 123456789 " required>
