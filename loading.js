@@ -38,6 +38,14 @@ function mascaraTelefone(event) {
     }
 }
 
+function mascaraCep() {
+    let cep = document.getElementById('icep')
+
+    if (cep.value.length == 5) {
+        cep.value += "-"
+    } 
+}
+
 
 
 function loading () {

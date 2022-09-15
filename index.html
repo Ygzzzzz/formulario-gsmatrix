@@ -75,7 +75,7 @@
             </select><br>
 
             <label for="icep">CEP</label>
-            <input type="text" name="Cep" id="icep" placeholder="00000-000" required pattern="\d{5}\d{3}" maxlength="8" >
+            <input type="text" name="Cep" id="icep" placeholder="00000-000" required  maxlength="9" onkeyup="mascaraCep()">
 
             <label for="iende">Endereço</label>
             <input type="text" name="Endereço" id="iende" placeholder="Endereço com número" required>
